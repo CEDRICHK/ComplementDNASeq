@@ -7,6 +7,8 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Codecov test coverage](https://codecov.io/gh/CEDRICHK/ComplementDNASeq/graph/badge.svg)](https://app.codecov.io/gh/CEDRICHK/ComplementDNASeq)
+[![R-CMD-check](https://github.com/CEDRICHK/ComplementDNASeq/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/CEDRICHK/ComplementDNASeq/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 ComplementDNASeq provides a small set of utilities for working with DNA

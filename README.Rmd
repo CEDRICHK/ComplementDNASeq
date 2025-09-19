@@ -17,6 +17,8 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/CEDRICHK/ComplementDNASeq/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/CEDRICHK/ComplementDNASeq/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/CEDRICHK/ComplementDNASeq/graph/badge.svg)](https://app.codecov.io/gh/CEDRICHK/ComplementDNASeq)
 <!-- badges: end -->
 
 ComplementDNASeq provides a small set of utilities for working with DNA sequences, starting with a robust implementation of a reverse-complement helper. The package normalises input, validates characters, and returns the expected Watson–Crick pairing for common workflows.
