@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 
 The package can be installed from GitHub using `remotes`:
 
-```r
+```{r eval = FALSE}
 # install.packages("remotes")
 remotes::install_github("CEDRICHK/ComplementDNASeq")
 ```
