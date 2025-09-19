@@ -1,0 +1,64 @@
+---
+title: "Using ComplementDNASeq"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using ComplementDNASeq}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Introduction
+
+`ComplementDNASeq` provides a simple utility to compute the reverse complement of DNA sequences. This vignette walks through typical usage patterns and discusses how the package validates input.
+
+## Installation
+
+The package can be installed from GitHub using `remotes`:
+
+```r
+# install.packages("remotes")
+remotes::install_github("CEDRICHK/ComplementDNASeq")
+```
+
+## Basic usage
+
+Load the package and call `reverse_complement()` with a DNA sequence composed of `A`, `C`, `G`, and `T`.
+
+```{r}
+library(ComplementDNASeq)
+reverse_complement("GATTACA")
+```
+
+The function returns the reverse complement sequence, flipping the order and swapping each nucleotide with its complement (`A` ↔ `T`, `C` ↔ `G`).
+
+## Handling invalid input
+
+If the input contains characters other than the standard nucleotides, the function raises an error to prevent ambiguous results.
+
+```{r, error = TRUE}
+reverse_complement("GATUACA")
+```
+
+Missing values are propagated unchanged so that the function can be safely used on vectors that may contain `NA` entries.
+
+```{r}
+reverse_complement(NA_character_)
+```
+
+## Working with vectors
+
+`reverse_complement()` operates on a single sequence at a time. When you have a vector of sequences, combine it with vectorised helpers such as `vapply()`.
+
+```{r}
+seqs <- c("ACTG", "TTTT", "CGCG")
+vapply(seqs, reverse_complement, character(1))
+```
+
+The helper ensures each element is processed individually while returning a character vector of matching length.
