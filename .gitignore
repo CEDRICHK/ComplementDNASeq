@@ -8,4 +8,9 @@
 
 dist/
 
+vignettes/*_cache/
+vignettes/figure/
+vignettes/*.html
+vignettes/*.pdf
+
 inst/doc/
