@@ -5,3 +5,8 @@
 ^\.github$
 ^codecov\.yml$
 ^Meta$
+^dist$
+^scripts$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

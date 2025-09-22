@@ -1,0 +1,26 @@
+url: https://cedrichk.github.io/ComplementDNASeq/
+template:
+  bootstrap: 5
+home:
+  title: ComplementDNASeq
+  description: >-
+    Utilities for computing reverse complements of DNA sequences in R.
+navbar:
+  structure:
+    left: [reference, articles, news]
+    right: [github]
+  components:
+    github:
+      icon: fab fa-github
+      href: https://github.com/CEDRICHK/ComplementDNASeq
+reference:
+  - title: Core functionality
+    desc: Reverse complement helpers available in the package.
+    contents:
+      - reverse_complement
+articles:
+  - title: Tutorials
+    navbar: Tutorials
+    contents:
+      - getting-started
+      - using-complementdnaseq
